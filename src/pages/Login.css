@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f5f7;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.login-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+
+.login-logo{
+    width:70px;
+}
+
+.login-nav-links{
+    display:flex;
+    list-style:none;
+    gap:60px;
+    font-size:14px;
+    font-weight:600;
+    color:#8b94a7;
+}
+
+.login-nav-links li{
+    cursor:pointer;
+}
+
+.nav-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.login-btn{
+    background:#0f4c81;
+    color:white;
+    border:none;
+    padding:14px 35px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.register-btn{
+    background:#3b82f6;
+    color:white;
+    border:none;
+    padding:14px 35px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* ================= LOGIN FORM ================= */
+
+.login-container{
+    width:70%;
+    margin:10px auto;
+    background:white;
+    border:1px solid #ddd;
+    padding:40px 70px 60px;
+}
+
+.login-container h1{
+    text-align:center;
+    font-size:52px;
+    color:#222;
+    line-height:1;
+    margin-bottom:10px;
+}
+
+/* ================= SUBTITLE ================= */
+
+.signup-text{
+    text-align:center;
+    font-size:18px;
+    color:#555;
+    margin-bottom:45px;
+}
+
+.signup-text span{
+    color:#3b82f6;
+    cursor:pointer;
+}
+
+/* ================= INPUTS ================= */
+
+.form-group{
+    margin-bottom:35px;
+}
+
+.form-group label{
+    display:block;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    color:#8b94a7;
+    margin-bottom:12px;
+}
+
+.form-group input{
+    width:100%;
+    padding:18px;
+    border:2px solid #cfcfcf;
+    border-radius:35px;
+    font-size:16px;
+    background:white;
+    outline:none;
+}
+
+/* ================= OPTIONS ================= */
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:10px;
+    margin-bottom:35px;
+}
+
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#8b94a7;
+    font-size:16px;
+}
+
+.login-options a{
+    color:#4d89d8;
+    text-decoration:none;
+    font-size:16px;
+}
+
+/* ================= ROLE SECTION ================= */
+
+.signin-role-title{
+    text-align:center;
+    color:#8b94a7;
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.role-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    margin-bottom:40px;
+}
+
+.role-card{
+    width:170px;
+    height:120px;
+    background:#dbe5f1;
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.role-card h4{
+    font-size:18px;
+    color:#7d8798;
+}
+
+.role-card.active{
+    background:#ff5a5a;
+}
+
+.role-card.active h4{
+    color:white;
+}
+
+/* ================= BUTTON ================= */
+
+.signin-button{
+    display:block;
+    margin:auto;
+
+    background:#0b94d2;
+    color:white;
+    border:none;
+
+    padding:18px 60px;
+    font-size:18px;
+    letter-spacing:1px;
+    cursor:pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .login-nav-links{
+        display:none;
+    }
+
+    .login-container{
+        width:95%;
+        padding:30px;
+    }
+
+    .login-container h1{
+        font-size:42px;
+    }
+
+    .login-options{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .role-container{
+        flex-direction:column;
+        align-items:center;
+    }
+}

@@ -1,0 +1,198 @@
+.success-page {
+  min-height: 100vh;
+  background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.success-navbar {
+  background: white;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.success-logo {
+  width: 90px;
+}
+
+.success-nav-links {
+  display: flex;
+  gap: 55px;
+  list-style: none;
+  color: #8a93a6;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.success-nav-links li {
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.login-btn {
+  background: #0f4c81;
+  color: white;
+  border: none;
+  padding: 15px 42px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-btn {
+  background: #3d7ff0;
+  color: white;
+  border: none;
+  padding: 15px 42px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* MAIN CONTAINER */
+
+.success-container {
+  width: 72%;
+  margin: 80px auto;
+  background: white;
+  border: 1px solid #dcdcdc;
+  padding: 90px 80px;
+  text-align: center;
+}
+
+/* STEP */
+
+.step-title {
+  color: #1184d6;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 120px;
+  margin-bottom: 35px;
+}
+
+/* SUCCESS ICON */
+
+.success-icon {
+  width: 100px;
+  height: 100px;
+  background: #27ae60;
+  color: white;
+  border-radius: 50%;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 35px;
+}
+
+/* TITLE */
+
+.success-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+/* DESCRIPTION */
+
+.success-description {
+  max-width: 550px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* BUTTON */
+
+.login-page-btn {
+  width: 320px;
+  height: 62px;
+  background: #1496d4;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.login-page-btn:hover {
+  background: #0d7db2;
+}
+
+/* BACK LINK */
+
+.back-link {
+  display: block;
+  margin-top: 25px;
+  text-decoration: none;
+  color: #444;
+  font-size: 18px;
+}
+
+.back-link:hover {
+  color: #0f4c81;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .success-container {
+    width: 90%;
+    padding: 60px 40px;
+  }
+
+  .success-title {
+    font-size: 38px;
+  }
+
+  .step-title {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .success-navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .success-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .success-container {
+    width: 95%;
+    padding: 40px 20px;
+  }
+
+  .success-title {
+    font-size: 30px;
+  }
+
+  .success-description {
+    font-size: 16px;
+  }
+
+  .login-page-btn {
+    width: 100%;
+  }
+
+  .step-title {
+    margin-left: 0;
+  }
+}

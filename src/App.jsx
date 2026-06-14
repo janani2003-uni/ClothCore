@@ -1,7 +1,7 @@
- import Home from "./Home";
+import SuccessPage from "./pages/SuccessPage";
 
 function App() {
-  return <Home />;
+  return <SuccessPage />;
 }
 
 export default App;
